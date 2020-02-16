@@ -1,0 +1,37 @@
+#useremail{
+    border-radius: 25px;
+    border: 2px solid #6F1E51;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+}
+#password{
+    border-radius: 25px;
+    border: 2px solid #6F1E51;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+}
+#login{
+    border-radius: 25px;
+    border: 2px ridge #06FDF8;
+    padding: 10px 25px;
+    background-color: #06FDF8;
+   color: #ffffff;
+}
+.main{
+  margin: 150px 400px ;
+  border-radius: 20px;
+  border: 3px ridge #06FDF8;
+  background-image: url("pic_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+body{
+    background-image: url("pic_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
