@@ -1,15 +1,15 @@
 <html>
- <head><title>Online Examination System</title></head>
+ <head><title>Online Examination System</title>
+  <link rel="stylesheet" href="backgroundforAdmin.css"></head>
  <body>
  	 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -27,14 +27,21 @@
   firebase.analytics();
 </script>
 <script src = "Admin.js"></script>
-<button type = "button" onclick ="logout()"  style="position: absolute; right: 0;">Log Out</button>
-Question .<input type = "text" id = "q" ></body><br><br>
-Option a .<input type = "text" id = "a" ></body><br><br>
-Option b .<input type = "text" id = "b" ></body><br><br>
-Option c .<input type = "text" id = "c" ></body><br><br>
-Option d .<input type = "text" id = "d" ></body><br><br>
-Answer .<input type = "text" id = "ans" ></body><br><br>
-<button type = "button" onclick = upload()>Upload</button><br><br>
-<button type = "button" onclick = showscores()>Show Scores</button>
+<button type = "button" onclick ="logout()" id="logout" style="position: absolute; right:10px">Log Out</button>
+<div class="main">
+<table border="0">
+  <font color="white">
+  <tr><td><font color="#6D214F"><b>Question-</b></font></td><td> <input type = "text" id = "q" ></body></td></tr>
+   <tr><td><font color="#6D214F"><b>Option A-</b></font></td><td> <input type = "text" id = "a" ></body></td></tr>
+  <tr><td><font color="#6D214F"><b> Option B-</b></font></td><td><input type = "text" id = "b" ></body></td></tr>
+  <tr><td><font color="#6D214F"><b>Option C-</b></font></td><td><input type = "text" id = "c" ></body></td></tr>
+  <tr><td><font color="#6D214F"><b> Option D-</b></font></td><td> <input type = "text" id = "d" ></body></td></tr>
+  <tr><td> <font color="#6D214F"><b>Answer-</b></font></td><td>  <input type = "text" id = "ans" ></body></td></tr>
+ <tr><td></td><td><button  type = "button" onclick = upload() id="update">Upload</button></td></tr>
+
+</table>
+<button type = "button" onclick = showscores() id="score">Show Scores</button>
+
+</div>
 </body>
 </html>

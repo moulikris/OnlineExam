@@ -1,0 +1,36 @@
+.main{
+  margin: 150px 400px ;
+  border-radius: 10px;
+  border: 10px double #b71540;
+  background-color: #eccc68;
+}
+#q,#a,#b,#c,#d,#ans{
+    border-radius: 25px;
+    border: 2px solid #6F1E51;
+    padding: 10px;
+    width: 200px;
+    height: 30px;
+}
+#update{
+  margin: 20px 0px 0px 200px ;
+  border-radius: 25px;
+  padding: 10px 25px;
+  border: 2px solid #6F1E51;
+  background-color: #e58e26;
+}
+#score{
+  border-radius: 25px;
+  padding: 10px 25px;
+  border: 2px solid #6F1E51;
+  background-color: #e58e26;
+}
+#logout{
+  border-radius: 25px;
+  padding: 10px 25px;
+  border: 2px solid #6F1E51;
+  margin: 0px 0px 0px 300px ;
+  background-color: #e58e26;
+}
+body{
+background-color: #ffa502;
+}
