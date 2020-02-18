@@ -1,5 +1,7 @@
 <html>
- <head><title>Online Examination System</title></head>
+ <head><title>Online Examination System</title>
+   <link rel="stylesheet" href="backgroundforhomepage.css">
+ </head>
  <body>
  	 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
@@ -26,8 +28,9 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
+<div calss="main">
 <script src = "homepage.js"></script>
-<button type = "button" onclick = "submit()">Submit</button>
-<h1 id = "scorecard"></h1>
+<button type = "button" onclick = "submit()" id="button">Submit</button>
+</div>
 </body>
 </html>

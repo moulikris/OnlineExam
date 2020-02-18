@@ -4,8 +4,7 @@ var option;
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
-    
-  } else {
+   } else {
     window.location.href = "Authentication.html";
   }
 });
@@ -20,11 +19,11 @@ firebase.auth().onAuthStateChanged(function(user) {
     snapshot.forEach(function(childSnapshot) {
        var childKey = childSnapshot.key;
        var childData = childSnapshot.val();
-    
+
        list.push(childData);
 
         console.log(childData.q);
-          
+
             var row = document.createElement("tr");
 
             var cell = document.createElement("td");
@@ -43,7 +42,7 @@ firebase.auth().onAuthStateChanged(function(user) {
             cell.appendChild(cellText);
             row.appendChild(cell);
             tblBody.appendChild(row);
-    
+
             var cell = document.createElement("INPUT");
             var lbl = document.createElement('label');
             //lbl.setAttribute('for', 'chkIfSenior' + i);
@@ -95,7 +94,7 @@ firebase.auth().onAuthStateChanged(function(user) {
             row.appendChild(cell);
             row.appendChild(lbl);
             tblBody.appendChild(row);
-            
+
              });
 
             tbl.appendChild(tblBody);
@@ -103,11 +102,11 @@ firebase.auth().onAuthStateChanged(function(user) {
             tbl.setAttribute("border", "1");
 });
 function  getId(element,user) {1
-    /*alert("row" + element.closest('tr').rowIndex + 
+    /*alert("row" + element.closest('tr').rowIndex +
     " -column" + element.closest('td').cellIndex);
   */
      var index =  element.closest('tr').rowIndex;
-    
+
      if(element.checked == true) {
        Alist[index] = user;
      }

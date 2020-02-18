@@ -16,7 +16,7 @@ firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
 
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-    //  window.location.href = "homepage.html";
+      window.location.href = "homepage.html";
     } else {
       // No user is signed in.
     }
